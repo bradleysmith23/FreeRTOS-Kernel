@@ -8053,7 +8053,7 @@ TickType_t uxTaskResetEventItemValue( void )
 
         pxTCB = xTaskToNotify;
 
-        uxSavedInterruptStatus = (unsigned short ) taskENTER_CRITICAL_FROM_ISR();
+        uxSavedInterruptStatus = ( unsigned short ) taskENTER_CRITICAL_FROM_ISR();
         {
             if( pulPreviousNotificationValue != NULL )
             {

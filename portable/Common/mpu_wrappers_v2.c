@@ -1539,7 +1539,7 @@
 
     #if ( configSUPPORT_DYNAMIC_ALLOCATION == 1 )
 
-        BaseType_t MPU_xTaskCreate( TaskFunction_t pvTaskCode,
+        BaseType_t MPU_xTaskCreate( TaskFunction_t pxTaskCode,
                                     const char * const pcName,
                                     uint16_t usStackDepth,
                                     void * pvParameters,
@@ -2826,7 +2826,7 @@
 
     #if ( ( configUSE_COUNTING_SEMAPHORES == 1 ) && ( configSUPPORT_DYNAMIC_ALLOCATION == 1 ) )
 
-        QueueHandle_t MPU_xQueueCreateCountingSemaphore( UBaseType_t uxCountValue,
+        QueueHandle_t MPU_xQueueCreateCountingSemaphore( UBaseType_t uxMaxCount,
                                                          UBaseType_t uxInitialCount ) /* PRIVILEGED_FUNCTION */
         {
             QueueHandle_t xInternalQueueHandle = NULL;

@@ -2671,7 +2671,11 @@ static void prvInitialiseNewTask( TaskFunction_t pxTaskCode,
          * https://www.FreeRTOS.org/RTOS-Cortex-M3-M4.html */
         portASSERT_IF_INTERRUPT_PRIORITY_INVALID();
 
+<<<<<<< HEAD
         uxSavedInterruptStatus = ( UBaseType_t ) taskENTER_CRITICAL_FROM_ISR();
+=======
+        uxSavedInterruptStatus = ( unsigned short ) taskENTER_CRITICAL_FROM_ISR();
+>>>>>>> 9e5884a3e (Initial set of SA fixes)
         {
             /* If null is passed in here then it is the priority of the calling
              * task that is being queried. */
@@ -2742,7 +2746,11 @@ static void prvInitialiseNewTask( TaskFunction_t pxTaskCode,
          * https://www.FreeRTOS.org/RTOS-Cortex-M3-M4.html */
         portASSERT_IF_INTERRUPT_PRIORITY_INVALID();
 
+<<<<<<< HEAD
         uxSavedInterruptStatus = ( UBaseType_t ) taskENTER_CRITICAL_FROM_ISR();
+=======
+        uxSavedInterruptStatus = ( unsigned short ) taskENTER_CRITICAL_FROM_ISR();
+>>>>>>> 9e5884a3e (Initial set of SA fixes)
         {
             /* If null is passed in here then it is the base priority of the calling
              * task that is being queried. */
@@ -8053,7 +8061,11 @@ TickType_t uxTaskResetEventItemValue( void )
 
         pxTCB = xTaskToNotify;
 
+<<<<<<< HEAD
         uxSavedInterruptStatus = ( UBaseType_t ) taskENTER_CRITICAL_FROM_ISR();
+=======
+        uxSavedInterruptStatus = (unsigned short ) taskENTER_CRITICAL_FROM_ISR();
+>>>>>>> 9e5884a3e (Initial set of SA fixes)
         {
             if( pulPreviousNotificationValue != NULL )
             {
@@ -8212,7 +8224,11 @@ TickType_t uxTaskResetEventItemValue( void )
 
         pxTCB = xTaskToNotify;
 
+<<<<<<< HEAD
         uxSavedInterruptStatus = ( UBaseType_t ) taskENTER_CRITICAL_FROM_ISR();
+=======
+        uxSavedInterruptStatus = ( unsigned short ) taskENTER_CRITICAL_FROM_ISR();
+>>>>>>> 9e5884a3e (Initial set of SA fixes)
         {
             ucOriginalNotifyState = pxTCB->ucNotifyState[ uxIndexToNotify ];
             pxTCB->ucNotifyState[ uxIndexToNotify ] = taskNOTIFICATION_RECEIVED;

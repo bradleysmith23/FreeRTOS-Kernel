@@ -4650,7 +4650,7 @@ BaseType_t xTaskCatchUpTicks( TickType_t xTicksToCatchUp )
                         /* This lets the task know it was forcibly removed from the
                          * blocked state so it should not re-evaluate its block time and
                          * then block again. */
-                        pxTCB->ucDelayAborted = pdTRUE;
+                        pxTCB->ucDelayAborted = (uint8_t) pdTRUE;
                     }
                     else
                     {
@@ -5591,7 +5591,7 @@ BaseType_t xTaskCheckForTimeOut( TimeOut_t * const pxTimeOut,
             {
                 /* The delay was aborted, which is not the same as a time out,
                  * but has the same result. */
-                pxCurrentTCB->ucDelayAborted = pdFALSE;
+                pxCurrentTCB->ucDelayAborted = ( uint8_t ) pdFALSE;
                 xReturn = pdTRUE;
             }
             else
@@ -8486,7 +8486,7 @@ static void prvAddCurrentTaskToDelayedList( TickType_t xTicksToWait,
         /* About to enter a delayed list, so ensure the ucDelayAborted flag is
          * reset to pdFALSE so it can be detected as having been set to pdTRUE
          * when the task leaves the Blocked state. */
-        pxCurrentTCB->ucDelayAborted = pdFALSE;
+        pxCurrentTCB->ucDelayAborted = ( uint8_t ) pdFALSE;
     }
     #endif
 

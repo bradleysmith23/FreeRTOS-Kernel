@@ -1095,12 +1095,28 @@ __attribute__( ( weak ) ) void vPortSetupTimerInterrupt( void )
 
 static void prvSetupMPU( void )
 {
-    extern uint32_t __privileged_functions_start__[];
-    extern uint32_t __privileged_functions_end__[];
-    extern uint32_t __FLASH_segment_start__[];
-    extern uint32_t __FLASH_segment_end__[];
-    extern uint32_t __privileged_data_start__[];
-    extern uint32_t __privileged_data_end__[];
+    #if defined( __ARMCC_VERSION )
+
+        /* Declaration when these variable are defined in code instead of being
+         * exported from linker scripts. */
+        extern uint32_t * __privileged_functions_start__;
+        extern uint32_t * __privileged_functions_end__;
+        extern uint32_t * __FLASH_segment_start__;
+        extern uint32_t * __FLASH_segment_end__;
+        extern uint32_t * __privileged_data_start__;
+        extern uint32_t * __privileged_data_end__;
+    #else
+        /* Declaration when these variable are exported from linker scripts. */
+        extern uint32_t __privileged_functions_start__[];
+        extern uint32_t __privileged_functions_end__[];
+        extern uint32_t __FLASH_segment_start__[];
+        extern uint32_t __FLASH_segment_end__[];
+        extern uint32_t __privileged_data_start__[];
+        extern uint32_t __privileged_data_end__[];
+    #endif /* if defined( __ARMCC_VERSION ) */
+
+    /* Ensure that the device has the expected MPU type */
+    configASSERT( portMPU_TYPE_REG == portEXPECTED_MPU_TYPE_VALUE );
 
     /* Check the expected MPU is present. */
     if( portMPU_TYPE_REG == portEXPECTED_MPU_TYPE_VALUE )
@@ -1229,10 +1245,22 @@ void vPortStoreTaskMPUSettings( xMPU_SETTINGS * xMPUSettings,
                                 StackType_t * pxBottomOfStack,
                                 uint32_t ulStackDepth )
 {
-    extern uint32_t __SRAM_segment_start__[];
-    extern uint32_t __SRAM_segment_end__[];
-    extern uint32_t __privileged_data_start__[];
-    extern uint32_t __privileged_data_end__[];
+    #if defined( __ARMCC_VERSION )
+
+        /* Declaration when these variable are defined in code instead of being
+         * exported from linker scripts. */
+        extern uint32_t * __SRAM_segment_start__;
+        extern uint32_t * __SRAM_segment_end__;
+        extern uint32_t * __privileged_data_start__;
+        extern uint32_t * __privileged_data_end__;
+    #else
+        /* Declaration when these variable are exported from linker scripts. */
+        extern uint32_t __SRAM_segment_start__[];
+        extern uint32_t __SRAM_segment_end__[];
+        extern uint32_t __privileged_data_start__[];
+        extern uint32_t __privileged_data_end__[];
+    #endif /* if defined( __ARMCC_VERSION ) */
+
     int32_t lIndex;
     uint32_t ul;
 
@@ -1352,7 +1380,15 @@ BaseType_t xPortIsAuthorizedToAccessBuffer( const void * pvBuffer,
     BaseType_t xAccessGranted = pdFALSE;
     const xMPU_SETTINGS * xTaskMpuSettings = xTaskGetMPUSettings( NULL ); /* Calling task's MPU settings. */
 
-    if( ( xTaskMpuSettings->ulTaskFlags & portTASK_IS_PRIVILEGED_FLAG ) == portTASK_IS_PRIVILEGED_FLAG )
+    if( xSchedulerRunning == pdFALSE )
+    {
+        /* Grant access to all the kernel objects before the scheduler
+         * is started. It is necessary because there is no task running
+         * yet and therefore, we cannot use the permissions of any
+         * task. */
+        xAccessGranted = pdTRUE;
+    }
+    else if( ( xTaskMpuSettings->ulTaskFlags & portTASK_IS_PRIVILEGED_FLAG ) == portTASK_IS_PRIVILEGED_FLAG )
     {
         xAccessGranted = pdTRUE;
     }

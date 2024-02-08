@@ -1,0 +1,903 @@
+# Define suppressions to prevent reporting of selected violations
+# detected by Parasoft analysis.
+# Note: One suppression entry can affect more than one violation.
+#
+# Example:
+#
+# suppression-begin
+# file: file.ext               (required)
+# line: 12                     (optional)
+# rule-id: BD-PB-VOVR          (optional)
+# message: Avoid unused values (optional)
+# reason: Approved             (optional)
+# author: devel                (optional)
+# date: 2020-09-21             (optional)
+# suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_uxTaskPriorityGet' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_uxTaskGetNumberOfTasks' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_uxTimerGetReloadMode' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_uxQueueMessagesWaiting' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTimerGetPeriod' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_vTaskGetInfo' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xEventGroupSync' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTaskGetApplicationTaskTag' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_vTaskSetApplicationTaskTag' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xEventGroupClearBits' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTimerCreateStatic' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTimerGetReloadMode' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xQueueGetMutexHolder' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTaskGetApplicationTaskTagFromISR' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xQueueSelectFromSet' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_vQueueUnregisterQueue' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_uxTaskGetStackHighWaterMark2' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTimerCreate' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_pcQueueGetName' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_pvTimerGetTimerID' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_vTaskSuspend' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_vQueueSetQueueNumber' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_uxQueueGetQueueNumber' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xQueueCreateMutex' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTimerGetStaticBuffer' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTimerGetTimerDaemonTaskHandle' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTaskGetCurrentTaskHandle' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xEventGroupWaitBitsEntry' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xEventGroupSetBitsFromISR' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_vTaskSetThreadLocalStoragePointer' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_ucQueueGetQueueType' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTaskGenericNotifyFromISR' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_ulTaskGetRunTimePercent' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_vTimerSetReloadMode' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xEventGroupSetBits' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTaskGenericNotifyEntry' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xStreamBufferIsEmpty' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xStreamBufferNextMessageLengthBytes' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTaskCheckForTimeOut' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTaskCallApplicationTaskHook' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_ulTaskGetIdleRunTimeCounter' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_vTaskDelete' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_uxQueueSpacesAvailable' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xStreamBufferSpacesAvailable' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_vTaskGenericNotifyGiveFromISR' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_uxTaskGetStackHighWaterMark' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xQueueTakeMutexRecursive' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_ulTaskGenericNotifyTake' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTimerGenericCommandFromISR' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xQueueGenericSend' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xQueueCreateSet' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xEventGroupCreate' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xQueueGiveMutexRecursive' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xStreamBufferSend' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xQueueReceive' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTaskGenericNotify' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xQueuePeek' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTaskGetTickCount' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTaskCreateRestricted' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_vQueueAddToRegistry' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_eTaskGetState' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xQueueAddToSet' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTaskResumeFromISR' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_vTimerSetTimerID' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTaskDelayUntil' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xStreamBufferBytesAvailable' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTimerGetExpiryTime' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTaskGetIdleTaskHandle' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xStreamBufferSetTriggerLevel' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTimerGenericCommandFromTask' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTimerIsTimerActive' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_ulTaskGenericNotifyValueClear' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xStreamBufferIsFull' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xQueueCreateCountingSemaphore' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xQueueGenericCreate' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xQueueSemaphoreTake' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_ulTaskGetRunTimeCounter' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_pcTimerGetName' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTaskAbortDelay' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTaskGenericNotifyStateClear' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_uxTaskGetSystemState' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTimerGenericCommandFromTaskEntry' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_vTaskSetTimeOutState' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xStreamBufferReceive' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTaskGenericNotifyWaitEntry' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_vTaskPrioritySet' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_pvTaskGetThreadLocalStoragePointer' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xStreamBufferGenericCreate' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_ulTaskGetIdleRunTimePercent' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_vTaskDelay' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTaskGenericNotifyWait' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_vTaskResume' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xQueueSelectFromSetFromISR' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTaskCreate' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xEventGroupClearBitsFromISR' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xQueueRemoveFromSet' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: mpu_prototypes.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'MPU_xTaskGetSchedulerState' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: portable.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'xPortIsAuthorizedToAccessKernelObject' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: portable.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'xPortIsAuthorizedToAccessBuffer' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: portable.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'vPortStoreTaskMPUSettings' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: portable.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'xPortGetMinimumEverFreeHeapSize' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: portable.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'xPortStartScheduler' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: portable.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'pvPortCalloc' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: portable.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'vPortDefineHeapRegions' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: portable.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'xPortGetFreeHeapSize' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: portable.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'pvPortMalloc' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: portable.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'vPortFree' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: portable.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'pxPortInitialiseStack' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: portable.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'vPortGetHeapStats' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: portable.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'vPortInitialiseBlocks' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
+
+suppression-begin
+file: portable.h
+rule-id: MISRAC2012-RULE_8_6-a
+message: The 'vPortEndScheduler' function has no definition
+reason: "Function is defined by the port."
+author: bjbsmith
+suppression-end
